@@ -11,8 +11,19 @@ body {
 
 
 .container{
-  background-color: cadetblue;
-  display: flex;
+  /* display: flex Ajusta el "ancho" al ancho disponible */
+  /* display: inline-flex Ajusta el "ancho" al espacio de los contenidos */
+
+
+  background-color: rgb(29, 220, 226);
+  display:flex;
+
+flex-direction: column;
+/* Flex-direction: row; Valor por default. Direccion Main Axis -> izq a derecha */
+/* Flex-direction: row; Valor por default. Direccion Main Axis -> der a izquierda */
+
+/* Flex-direction: column; Cambia la direcion del axis de arriba hacia abajo */
+/* Flex-direction: column-reverse; Cambia la direccion del main axis de abajo hacia arriba */
 }
 
 .item{
@@ -23,5 +34,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   padding-top: 32px;
+  border: 1px solid black;
 
   }
